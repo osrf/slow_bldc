@@ -18,15 +18,27 @@ With integrated power FETs:
 
 ### encoder
 Requirements: SPI interface
-  * AMS 5047 / 5048 [product list](http://ams.com/eng/Products/Magnetic-Position-Sensors/Angle-Position-On-Axis)
-  * Melexis 90316
-    * 5V supply
-    * SPI
-    * 12 bit
-    * 1 kHz
-  * MPS MA700
-    * 3v3 supply, only 7 mA
-    * 11 bit
-    * 500 kHz
-    * can be mounted off-axis and calibrated for donut magnets
-hall array:
+  * Digital angle output IC's
+    * AMS 5048A [product list](http://ams.com/eng/Products/Magnetic-Position-Sensors/Angle-Position-On-Axis)
+      * 14 bit, SPI
+      * 3v3 supply
+      * 11 kHz
+    * Melexis MLX90316
+      * 12 bit, SPI
+      * 5V supply
+      * 1 kHz
+    * MPS MA700
+      * 3v3 supply, only 7 mA
+      * 11 bit
+      * 500 kHz
+      * can be mounted off-axis and calibrated for donut magnets
+    * Allegro A1335
+      * 12 bit, SPI
+      * can be mounted off-axis
+    * AK7451
+      * 12 bit
+  * Analog output IC's are pretty difference since they output analog sine/cosine, which allows lots of flexibility would would require high-precision simultaneous-sampling ADC to be awesome
+    * NXP KMZ60
+    * KMT37
+    * NVE AAT00x is super low power and tiny since it just provides the sine/cosine half bridges; you need to supply amps and ADC's
+    * AS5115 has differential analog sine/cosine outputs
