@@ -1,4 +1,4 @@
-update=Wed 05 Apr 2017 12:18:38 PM PDT
+update=Sun 09 Apr 2017 10:46:45 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../osrf_hw/kicad_libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -59,3 +59,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=stm32
+LibName31=encoders
