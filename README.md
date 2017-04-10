@@ -22,7 +22,9 @@ Requirements: SPI interface
     * AMS 5048A [product list](http://ams.com/eng/Products/Magnetic-Position-Sensors/Angle-Position-On-Axis)
       * 14 bit, SPI
       * 3v3 supply
-      * 11 kHz
+      * 11 kHz, not really aimed at BLDC, but we're not trying to go fast
+    * AMS AS5047D and AS5047P are intended for high-speed BLDC and automatically compensate for encoder latency
+      * super cool, but probably not necessary for super low-speed applications
     * Melexis MLX90316
       * 12 bit, SPI
       * 5V supply
