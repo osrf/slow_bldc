@@ -1,4 +1,4 @@
-update=Sun 09 Apr 2017 10:46:45 PM PDT
+update=Mon 10 Apr 2017 06:07:51 PM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,3 +60,14 @@ LibName28=contrib
 LibName29=valves
 LibName30=stm32
 LibName31=encoders
+LibName32=bldc
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
