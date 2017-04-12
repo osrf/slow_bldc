@@ -1157,8 +1157,6 @@ F 3 "" H 10200 6750 50  0001 C CNN
 	1    10200 6750
 	1    0    0    -1  
 $EndComp
-Text Notes 3850 10200 0    60   ~ 0
-TODO: rs485 driver
 $Comp
 L INA240 U4
 U 1 1 58ECD552
@@ -1673,4 +1671,8 @@ F 3 "" H 12950 7700 50  0001 C CNN
 	1    12950 7700
 	1    0    0    -1  
 $EndComp
+Text Notes 1050 9250 0    60   ~ 0
+use R-783.3-0.5
+Text Notes 3250 5950 0    60   ~ 0
+TODO: ferrite + caps to connect 3v3 and Vaa
 $EndSCHEMATC
