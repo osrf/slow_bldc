@@ -59,7 +59,9 @@ F 3 "" H 8200 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 1800 8200 1800
+	8000 1800 8100 1800
+Wire Wire Line
+	8100 1800 8200 1800
 $Comp
 L +3V3 #PWR19
 U 1 1 58E5454C
@@ -117,7 +119,17 @@ F 3 "" H 2500 6200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 6600 1300 7200
+	1300 6600 1300 6700
+Wire Wire Line
+	1300 6700 1300 6800
+Wire Wire Line
+	1300 6800 1300 6900
+Wire Wire Line
+	1300 6900 1300 7000
+Wire Wire Line
+	1300 7000 1300 7100
+Wire Wire Line
+	1300 7100 1300 7200
 Connection ~ 1300 6700
 Connection ~ 1300 6800
 Connection ~ 1300 6900
@@ -135,7 +147,11 @@ F 3 "" H 8000 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 5400 8300 5400
+	8000 5400 8100 5400
+Wire Wire Line
+	8100 5400 8200 5400
+Wire Wire Line
+	8200 5400 8300 5400
 Connection ~ 8100 5400
 Connection ~ 8200 5400
 $Comp
@@ -151,7 +167,9 @@ F 3 "" H 1300 7200 50  0001 C CNN
 $EndComp
 Connection ~ 1300 7200
 Wire Wire Line
-	2250 6350 2250 6700
+	2250 6350 2250 6600
+Wire Wire Line
+	2250 6600 2250 6700
 Wire Wire Line
 	2250 6800 2800 6800
 Text Label 2300 6800 0    60   ~ 0
@@ -191,12 +209,22 @@ F 3 "" H 5300 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 9200 5300 9500
+	5300 9200 5300 9300
+Wire Wire Line
+	5300 9300 5300 9400
+Wire Wire Line
+	5300 9400 5300 9500
 Connection ~ 5300 9300
 Connection ~ 5300 9400
 Connection ~ 5300 9500
 Wire Wire Line
-	5300 6500 5300 6900
+	5300 6500 5300 6600
+Wire Wire Line
+	5300 6600 5300 6700
+Wire Wire Line
+	5300 6700 5300 6800
+Wire Wire Line
+	5300 6800 5300 6900
 Connection ~ 5300 6600
 Connection ~ 5300 6700
 $Comp
@@ -293,7 +321,13 @@ OTW
 Text Label 5050 7300 0    60   ~ 0
 FAULT
 Wire Wire Line
-	6700 6500 6700 6900
+	6700 6500 6700 6600
+Wire Wire Line
+	6700 6600 6700 6700
+Wire Wire Line
+	6700 6700 6700 6800
+Wire Wire Line
+	6700 6800 6700 6900
 Connection ~ 6700 6600
 Connection ~ 6700 6700
 Connection ~ 6700 6800
@@ -338,7 +372,9 @@ F 22 "_" H 6800 8000 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6700 8100 7500 8100
+	6700 8100 6800 8100
+Wire Wire Line
+	6800 8100 7500 8100
 Wire Wire Line
 	6700 7900 6800 7900
 $Comp
@@ -372,7 +408,9 @@ F 22 "_" H 6800 8400 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6700 8500 7500 8500
+	6700 8500 6800 8500
+Wire Wire Line
+	6800 8500 7500 8500
 Wire Wire Line
 	6700 8300 6800 8300
 $Comp
@@ -406,7 +444,9 @@ F 22 "_" H 6800 8800 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6700 8900 7500 8900
+	6700 8900 6800 8900
+Wire Wire Line
+	6800 8900 7500 8900
 Wire Wire Line
 	6700 8700 6800 8700
 Text Label 6750 7900 0    60   ~ 0
@@ -457,9 +497,13 @@ $EndComp
 Wire Wire Line
 	5300 9100 5300 9000
 Wire Wire Line
-	4450 9100 5300 9100
+	4450 9100 4900 9100
 Wire Wire Line
-	4450 9000 4450 9200
+	4900 9100 5300 9100
+Wire Wire Line
+	4450 9000 4450 9100
+Wire Wire Line
+	4450 9100 4450 9200
 Wire Wire Line
 	5300 8900 4900 8900
 Text Label 4950 8900 0    60   ~ 0
@@ -561,10 +605,24 @@ F 22 "_" H 4450 6600 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3400 6500 5300 6500
+	3400 6500 3750 6500
+Wire Wire Line
+	3750 6500 4100 6500
+Wire Wire Line
+	4100 6500 4450 6500
+Wire Wire Line
+	4450 6500 4800 6500
+Wire Wire Line
+	4800 6500 5300 6500
 Connection ~ 4800 6500
 Wire Wire Line
-	3400 6700 4800 6700
+	3400 6700 3750 6700
+Wire Wire Line
+	3750 6700 4100 6700
+Wire Wire Line
+	4100 6700 4450 6700
+Wire Wire Line
+	4450 6700 4800 6700
 $Comp
 L GND #PWR13
 U 1 1 58EC29B3
@@ -714,7 +772,13 @@ F 22 "_" H 7000 6600 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6700 6500 8200 6500
+	6700 6500 7000 6500
+Wire Wire Line
+	7000 6500 7400 6500
+Wire Wire Line
+	7400 6500 7800 6500
+Wire Wire Line
+	7800 6500 8200 6500
 $Comp
 L C_Small C11
 U 1 1 58EC35A9
@@ -777,7 +841,11 @@ F 22 "_" H 7800 6600 50  0001 C CNN "ResonnanceFreq"
 $EndComp
 Connection ~ 7000 6500
 Wire Wire Line
-	7000 6700 8200 6700
+	7000 6700 7400 6700
+Wire Wire Line
+	7400 6700 7800 6700
+Wire Wire Line
+	7800 6700 8200 6700
 $Comp
 L GND #PWR18
 U 1 1 58EC3755
@@ -1046,10 +1114,16 @@ F 22 "_" H 2000 9600 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1300 9500 2000 9500
+	1300 9500 1650 9500
+Wire Wire Line
+	1650 9500 2000 9500
 Connection ~ 1650 9500
 Wire Wire Line
-	1300 9700 2700 9700
+	1300 9700 1650 9700
+Wire Wire Line
+	1650 9700 2000 9700
+Wire Wire Line
+	2000 9700 2700 9700
 Connection ~ 1650 9700
 $Comp
 L GND #PWR4
@@ -1115,8 +1189,6 @@ F 22 "_" H 2700 9600 50  0001 C CNN "ResonnanceFreq"
 	-1   0    0    1   
 $EndComp
 Connection ~ 2000 9700
-Text Notes 1050 9150 0    60   ~ 0
-TODO: 12v->3.3v switching regulator
 $Comp
 L R_Small R3
 U 1 1 58ECAF0C
@@ -1170,7 +1242,9 @@ F 3 "" H 10750 6500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 9100 6700 9500
+	6700 9100 6700 9300
+Wire Wire Line
+	6700 9300 6700 9500
 $Comp
 L GND #PWR17
 U 1 1 58ECE7CE
@@ -1192,7 +1266,9 @@ Wire Wire Line
 Text Label 11200 7050 0    60   ~ 0
 OUTA
 Wire Wire Line
-	10200 6550 10200 6750
+	10200 6550 10200 6650
+Wire Wire Line
+	10200 6650 10200 6750
 Connection ~ 10200 6650
 Wire Wire Line
 	10200 6450 10200 6350
@@ -1310,7 +1386,9 @@ Wire Wire Line
 Text Label 11200 8250 0    60   ~ 0
 OUTB
 Wire Wire Line
-	10200 7750 10200 7950
+	10200 7750 10200 7850
+Wire Wire Line
+	10200 7850 10200 7950
 Connection ~ 10200 7850
 Wire Wire Line
 	10200 7650 10200 7550
@@ -1428,7 +1506,9 @@ Wire Wire Line
 Text Label 11200 9450 0    60   ~ 0
 OUTC
 Wire Wire Line
-	10200 8950 10200 9150
+	10200 8950 10200 9050
+Wire Wire Line
+	10200 9050 10200 9150
 Connection ~ 10200 9050
 Wire Wire Line
 	10200 8850 10200 8750
@@ -1672,8 +1752,6 @@ F 3 "" H 12950 7700 50  0001 C CNN
 	1    12950 7700
 	1    0    0    -1  
 $EndComp
-Text Notes 1050 9250 0    60   ~ 0
-use R-783.3-0.5
 Text Notes 3250 5950 0    60   ~ 0
 TODO: ferrite + caps to connect 3v3 and Vaa
 $Comp
@@ -1722,4 +1800,206 @@ F 3 "" H 2250 10300 50  0001 C CNN
 $EndComp
 Text Notes 2350 10500 0    60   ~ 0
 todo: input/output caps
+$Comp
+L CONN_01X03 J?
+U 1 1 58EFAE2B
+P 14650 7600
+F 0 "J?" H 14728 7595 50  0000 L CNN
+F 1 "CONN_01X03" H 14728 7550 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 14727 7550 50  0001 L CNN
+F 3 "" H 14650 7600 50  0000 C CNN
+	1    14650 7600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 7600 13950 7600
+Text Label 13950 7500 0    60   ~ 0
+STDOUT
+Wire Wire Line
+	14450 7500 13950 7500
+Text Label 13950 7600 0    60   ~ 0
+STDIN
+$Comp
+L GND #PWR?
+U 1 1 58EFAE35
+P 14450 7700
+F 0 "#PWR?" H 14450 7450 50  0001 C CNN
+F 1 "GND" H 14455 7527 50  0001 C CNN
+F 2 "" H 14450 7700 50  0001 C CNN
+F 3 "" H 14450 7700 50  0001 C CNN
+	1    14450 7700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 9000 8700 9000
+Text Label 8700 9000 0    60   ~ 0
+RS485RE
+Wire Wire Line
+	9200 8900 8700 8900
+Text Label 8700 8900 0    60   ~ 0
+RS485RO
+Wire Wire Line
+	9200 9300 8700 9300
+Text Label 8700 9300 0    60   ~ 0
+RS485DI
+Wire Wire Line
+	9200 9200 8700 9200
+Text Label 8700 9200 0    60   ~ 0
+RS485DE
+Wire Wire Line
+	9200 9600 8700 9600
+Text Label 8700 9500 0    60   ~ 0
+STDOUT
+Wire Wire Line
+	9200 9500 8700 9500
+Text Label 8700 9600 0    60   ~ 0
+STDIN
+Wire Wire Line
+	8500 10100 8250 10100
+Text Label 8250 10100 0    60   ~ 0
+RSTA
+Wire Wire Line
+	8500 10200 8250 10200
+Text Label 8250 10200 0    60   ~ 0
+RSTB
+Wire Wire Line
+	8500 10300 8250 10300
+Text Label 8250 10300 0    60   ~ 0
+RSTC
+Wire Wire Line
+	8500 9700 8250 9700
+Text Label 8250 9700 0    60   ~ 0
+PWMA
+Wire Wire Line
+	8500 9800 8250 9800
+Text Label 8250 9800 0    60   ~ 0
+PWMB
+Wire Wire Line
+	8500 9900 8250 9900
+Text Label 8250 9900 0    60   ~ 0
+PWMC
+Wire Wire Line
+	8500 9300 8250 9300
+Text Label 8250 9300 0    60   ~ 0
+AGND
+Wire Wire Line
+	8500 9200 8250 9200
+Text Label 8250 9200 0    60   ~ 0
+VREG
+Wire Wire Line
+	8500 9400 8250 9400
+Text Label 8250 9400 0    60   ~ 0
+VREG
+Wire Wire Line
+	8500 8900 8250 8900
+Wire Wire Line
+	8500 9000 8250 9000
+Text Label 8250 8900 0    60   ~ 0
+OTW
+Text Label 8250 9000 0    60   ~ 0
+FAULT
+Wire Wire Line
+	8750 10000 9050 10000
+Text Label 8800 10000 0    60   ~ 0
+AMPA
+Wire Wire Line
+	8750 10100 9050 10100
+Text Label 8800 10100 0    60   ~ 0
+AMPB
+Wire Wire Line
+	8750 10200 9050 10200
+Text Label 8800 10200 0    60   ~ 0
+AMPC
+Wire Wire Line
+	8650 10400 9200 10400
+Wire Wire Line
+	8650 10500 9200 10500
+Text Label 8700 10500 0    60   ~ 0
+ENC_SCLK
+Wire Wire Line
+	8650 10600 9200 10600
+Text Label 8700 10600 0    60   ~ 0
+ENC_MISO
+Wire Wire Line
+	8650 10700 9200 10700
+Text Label 8700 10700 0    60   ~ 0
+ENC_MOSI
+Text Notes 8300 8700 0    60   ~ 0
+unassigned MCU i/o
+Text Notes 6650 10450 0    60   ~ 0
+TODO: jtag/swd
+Wire Wire Line
+	15500 4800 15900 4800
+Text Label 15550 4800 0    60   ~ 0
+SWDIO
+Wire Wire Line
+	15500 4900 15900 4900
+Text Label 15550 4900 0    60   ~ 0
+SWCLK
+Wire Wire Line
+	900  2200 550  2200
+Text Label 550  2200 0    60   ~ 0
+NRST
+Wire Wire Line
+	900  2400 900  2400
+Wire Wire Line
+	6600 10300 6250 10300
+Text Label 6250 10300 0    60   ~ 0
+NRST
+Wire Wire Line
+	6600 10500 6250 10500
+Text Label 6250 10500 0    60   ~ 0
+BOOT0
+Wire Wire Line
+	6150 10700 6550 10700
+Text Label 6200 10700 0    60   ~ 0
+SWDIO
+Wire Wire Line
+	6150 10800 6550 10800
+Text Label 6200 10800 0    60   ~ 0
+SWCLK
+Text Notes 1250 5750 0    60   ~ 0
+TODO: crystal + load caps
+Wire Wire Line
+	900  2800 550  2800
+Text Label 550  2800 0    60   ~ 0
+OSC_IN
+Wire Wire Line
+	900  2900 550  2900
+Text Label 550  2900 0    60   ~ 0
+OSC_OUT
+Wire Wire Line
+	1700 5850 1350 5850
+Text Label 1350 5850 0    60   ~ 0
+OSC_IN
+Wire Wire Line
+	1700 5950 1350 5950
+Text Label 1350 5950 0    60   ~ 0
+OSC_OUT
+$Comp
+L +3V3 #PWR?
+U 1 1 58EFE537
+P 600 2600
+F 0 "#PWR?" H 600 2450 50  0001 C CNN
+F 1 "+3V3" H 615 2773 50  0000 C CNN
+F 2 "" H 600 2600 50  0001 C CNN
+F 3 "" H 600 2600 50  0001 C CNN
+	1    600  2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58EFE992
+P 900 2400
+F 0 "#PWR?" H 900 2150 50  0001 C CNN
+F 1 "GND" H 905 2227 50  0001 C CNN
+F 2 "" H 900 2400 50  0001 C CNN
+F 3 "" H 900 2400 50  0001 C CNN
+	1    900  2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  2600 900  2600
+Text Notes 500  2300 0    60   ~ 0
+flash boot
 $EndSCHEMATC
