@@ -3,26 +3,24 @@
 ## parts selection
 
 ### microcontrollers
-Goal: something fast, with FPU (at least for now). HS USB would be nice for tons of datalogging, but not necessarily required.
-  * STM32F723ZET6: a bit spendy but is fast with HS USB, which is neat.
-  * STM32F4
-    * Access line: F401, F410, F411, F412, F413 only have one ADC
-    * Fancier ones have multiple ADC's which would be nicer.
-  * STM32F3
-    * lots of ADC's and should be plenty of FLOPS for our purposes
-  * Atmel SAM E / V / S
+Goal: Fast Cortex-M with FPU (at least for now). HS USB would be nice for tons of datalogging, but not necessarily required.
+  * Selection: STM32F303CCT
+  * Other parts considered:
+    * STM32F723ZET6: a bit spendy but is fast with HS USB, which is neat.
+    * STM32F4
+      * Access line: F401, F410, F411, F412, F413 only have one ADC
+      * Fancier ones have multiple ADC's which would be nicer.
+    * Atmel SAM E / V / S
 
 ### motor driver
-With integrated power FETs:
-  * [TI DRV8312](http://www.ti.com/product/DRV8312)
+Goal: something completely-integrated with power capacity comfortable for 1A to 2A.
+  * Selection: [TI DRV8312](http://www.ti.com/product/DRV8312)
 
 ### encoder
-Requirements: SPI interface
-  * Digital angle output IC's
-    * AMS 5048A [product list](http://ams.com/eng/Products/Magnetic-Position-Sensors/Angle-Position-On-Axis)
-      * 14 bit, SPI
-      * 3v3 supply
-      * 11 kHz, not really aimed at BLDC, but we're not trying to go fast
+Requirements: SPI interface, relatively high resolution
+  * Selection: AMS 5048A
+    * 14 bit, SPI, 3.3v single-supply, 11 kHz
+  * Other parts considered:
     * AMS AS5047D and AS5047P are intended for high-speed BLDC and automatically compensate for encoder latency
       * super cool, but probably not necessary for super low-speed applications
     * Melexis MLX90316
@@ -44,3 +42,14 @@ Requirements: SPI interface
     * KMT37
     * NVE AAT00x is super low power and tiny since it just provides the sine/cosine half bridges; you need to supply amps and ADC's
     * AS5115 has differential analog sine/cosine outputs
+
+### comms
+  * MCU has USB full-speed (12 mbps)
+  * Half-duplex RS-485 IC included for chaining these boards together: SN65HVD75
+
+### power supply
+  * assumes a regulated 12V supply to provide both the gate-drive and motor bus voltage
+  * onboard Recom DC-DC used to generate local 3.3v supply
+
+### current sense
+  * TI INA240 used for inline current measurement on flying series current-sense resistors to each phase lead
