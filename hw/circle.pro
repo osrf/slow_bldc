@@ -1,4 +1,4 @@
-update=Wed 12 Apr 2017 04:57:43 PM PDT
+update=Mon 17 Apr 2017 11:31:07 AM PDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [eeschema]
 version=1
 LibDir=../../osrf_hw/kicad_libraries
@@ -72,3 +62,13 @@ LibName30=stm32
 LibName31=encoders
 LibName32=bldc
 LibName33=DCDC_Converters
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
