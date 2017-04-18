@@ -55,6 +55,7 @@ F 0 "U1" H 6950 5450 50  0000 C CNN
 F 1 "STM32F303CCTx" H 7200 5350 50  0000 C CNN
 F 2 "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm" H 15400 5275 50  0001 R TNN
 F 3 "" H 8200 3600 50  0001 C CNN
+F 4 "497-13318" H 8200 3600 60  0001 C CNN "D1PN"
 	1    8200 3600
 	1    0    0    -1  
 $EndComp
@@ -91,6 +92,7 @@ F 0 "U2" H 1775 7487 60  0000 C CNN
 F 1 "AS5048A" H 1775 7381 60  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-14_4.4x5mm_Pitch0.65mm" H 2500 6200 60  0001 C CNN
 F 3 "" H 2500 6200 60  0001 C CNN
+F 4 "AS5048A-HTSP-500CT" H 1750 6900 60  0001 C CNN "D1PN"
 	1    1750 6900
 	1    0    0    -1  
 $EndComp
@@ -154,6 +156,7 @@ F 0 "U3" H 6000 9787 60  0000 C CNN
 F 1 "DRV8312" H 6000 9681 60  0000 C CNN
 F 2 "bldc:SOIC-44-POWERPAD" H 5950 8000 60  0001 C CNN
 F 3 "" H 5950 8000 60  0001 C CNN
+F 4 "296-29649" H 6000 8000 60  0001 C CNN "D1PN"
 	1    6000 8000
 	1    0    0    -1  
 $EndComp
@@ -455,21 +458,20 @@ F 4 "_" H 4450 9300 50  0001 C CNN "MFN"
 F 5 "_" H 4450 9300 50  0001 C CNN "MFP"
 F 6 "digikey" H 4450 9300 50  0001 C CNN "D1"
 F 7 "mouser" H 4450 9300 50  0001 C CNN "D2"
-F 8 "_" H 4450 9300 50  0001 C CNN "D1PN"
+F 8 "311-1.00HR" H 4450 9300 50  0001 C CNN "D1PN"
 F 9 "_" H 4450 9300 50  0001 C CNN "D1PL"
 F 10 "_" H 4450 9300 50  0001 C CNN "D2PN"
 F 11 "_" H 4450 9300 50  0001 C CNN "D2PL"
-F 12 "0402" H 4450 9300 50  0001 C CNN "Package"
-F 13 "_" V 4346 9300 50  0001 C CNN "Description"
-F 14 "_" H 4450 9300 50  0001 C CNN "Voltage"
-F 15 "_" H 4450 9300 50  0001 C CNN "Power"
-F 16 "_" H 4450 9300 50  0001 C CNN "Tolerance"
-F 17 "_" H 4450 9300 50  0001 C CNN "Temperature"
-F 18 "_" H 4450 9300 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 4450 9300 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 4450 9300 50  0001 C CNN "Cont.Current"
-F 21 "_" H 4450 9300 50  0001 C CNN "Frequency"
-F 22 "_" H 4450 9300 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" V 4346 9300 50  0001 C CNN "Description"
+F 13 "_" H 4450 9300 50  0001 C CNN "Voltage"
+F 14 "_" H 4450 9300 50  0001 C CNN "Power"
+F 15 "_" H 4450 9300 50  0001 C CNN "Tolerance"
+F 16 "_" H 4450 9300 50  0001 C CNN "Temperature"
+F 17 "_" H 4450 9300 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 4450 9300 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 4450 9300 50  0001 C CNN "Cont.Current"
+F 20 "_" H 4450 9300 50  0001 C CNN "Frequency"
+F 21 "_" H 4450 9300 50  0001 C CNN "ResonnanceFreq"
 	1    4450 9300
 	-1   0    0    1   
 $EndComp
@@ -520,21 +522,20 @@ F 4 "_" H 4450 6600 50  0001 C CNN "MFN"
 F 5 "_" H 4450 6600 50  0001 C CNN "MFP"
 F 6 "digikey" H 4450 6600 50  0001 C CNN "D1"
 F 7 "mouser" H 4450 6600 50  0001 C CNN "D2"
-F 8 "_" H 4450 6600 50  0001 C CNN "D1PN"
+F 8 "587-3246" H 4450 6600 50  0001 C CNN "D1PN"
 F 9 "_" H 4450 6600 50  0001 C CNN "D1PL"
 F 10 "_" H 4450 6600 50  0001 C CNN "D2PN"
 F 11 "_" H 4450 6600 50  0001 C CNN "D2PL"
-F 12 "0402" H 4450 6600 50  0001 C CNN "Package"
-F 13 "_" H 4358 6691 50  0001 R CNN "Description"
-F 14 "_" H 4450 6600 50  0001 C CNN "Voltage"
-F 15 "_" H 4450 6600 50  0001 C CNN "Power"
-F 16 "_" H 4450 6600 50  0001 C CNN "Tolerance"
-F 17 "_" H 4450 6600 50  0001 C CNN "Temperature"
-F 18 "_" H 4450 6600 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 4450 6600 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 4450 6600 50  0001 C CNN "Cont.Current"
-F 21 "_" H 4450 6600 50  0001 C CNN "Frequency"
-F 22 "_" H 4450 6600 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" H 4358 6691 50  0001 R CNN "Description"
+F 13 "_" H 4450 6600 50  0001 C CNN "Voltage"
+F 14 "_" H 4450 6600 50  0001 C CNN "Power"
+F 15 "_" H 4450 6600 50  0001 C CNN "Tolerance"
+F 16 "_" H 4450 6600 50  0001 C CNN "Temperature"
+F 17 "_" H 4450 6600 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 4450 6600 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 4450 6600 50  0001 C CNN "Cont.Current"
+F 20 "_" H 4450 6600 50  0001 C CNN "Frequency"
+F 21 "_" H 4450 6600 50  0001 C CNN "ResonnanceFreq"
 	1    4450 6600
 	-1   0    0    1   
 $EndComp
@@ -781,7 +782,7 @@ F 4 "Panasonic" H 8200 6600 50  0001 C CNN "MFN"
 F 5 "EEE-FT1C101AR" H 8200 6600 50  0001 C CNN "MFP"
 F 6 "digikey" H 8200 6600 50  0001 C CNN "D1"
 F 7 "mouser" H 8200 6600 50  0001 C CNN "D2"
-F 8 "_" H 8200 6600 50  0001 C CNN "D1PN"
+F 8 "P15086" H 8200 6600 50  0001 C CNN "D1PN"
 F 9 "_" H 8200 6600 50  0001 C CNN "D1PL"
 F 10 "_" H 8200 6600 50  0001 C CNN "D2PN"
 F 11 "_" H 8200 6600 50  0001 C CNN "D2PL"
@@ -901,6 +902,7 @@ F 0 "J2" V 1930 7988 50  0000 L CNN
 F 1 "USB_OTG" V 2021 7988 50  0000 L CNN
 F 2 "Connect:USB_Micro-B_10103594-0001LF" V 2067 7988 50  0001 L CNN
 F 3 "" V 1850 7700 50  0000 C CNN
+F 4 "609-4050-1" V 1900 7800 60  0001 C CNN "D1PN"
 	1    1900 7800
 	0    1    1    0   
 $EndComp
@@ -949,17 +951,16 @@ F 8 "_" H 1300 9600 50  0001 C CNN "D1PN"
 F 9 "_" H 1300 9600 50  0001 C CNN "D1PL"
 F 10 "_" H 1300 9600 50  0001 C CNN "D2PN"
 F 11 "_" H 1300 9600 50  0001 C CNN "D2PL"
-F 12 "0402" H 1300 9600 50  0001 C CNN "Package"
-F 13 "_" H 1208 9691 50  0001 R CNN "Description"
-F 14 "_" H 1300 9600 50  0001 C CNN "Voltage"
-F 15 "_" H 1300 9600 50  0001 C CNN "Power"
-F 16 "_" H 1300 9600 50  0001 C CNN "Tolerance"
-F 17 "_" H 1300 9600 50  0001 C CNN "Temperature"
-F 18 "_" H 1300 9600 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 1300 9600 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 1300 9600 50  0001 C CNN "Cont.Current"
-F 21 "_" H 1300 9600 50  0001 C CNN "Frequency"
-F 22 "_" H 1300 9600 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" H 1208 9691 50  0001 R CNN "Description"
+F 13 "_" H 1300 9600 50  0001 C CNN "Voltage"
+F 14 "_" H 1300 9600 50  0001 C CNN "Power"
+F 15 "_" H 1300 9600 50  0001 C CNN "Tolerance"
+F 16 "_" H 1300 9600 50  0001 C CNN "Temperature"
+F 17 "_" H 1300 9600 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 1300 9600 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 1300 9600 50  0001 C CNN "Cont.Current"
+F 20 "_" H 1300 9600 50  0001 C CNN "Frequency"
+F 21 "_" H 1300 9600 50  0001 C CNN "ResonnanceFreq"
 	1    1300 9600
 	-1   0    0    1   
 $EndComp
@@ -979,17 +980,16 @@ F 8 "_" H 1650 9600 50  0001 C CNN "D1PN"
 F 9 "_" H 1650 9600 50  0001 C CNN "D1PL"
 F 10 "_" H 1650 9600 50  0001 C CNN "D2PN"
 F 11 "_" H 1650 9600 50  0001 C CNN "D2PL"
-F 12 "0402" H 1650 9600 50  0001 C CNN "Package"
-F 13 "_" H 1558 9691 50  0001 R CNN "Description"
-F 14 "_" H 1650 9600 50  0001 C CNN "Voltage"
-F 15 "_" H 1650 9600 50  0001 C CNN "Power"
-F 16 "_" H 1650 9600 50  0001 C CNN "Tolerance"
-F 17 "_" H 1650 9600 50  0001 C CNN "Temperature"
-F 18 "_" H 1650 9600 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 1650 9600 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 1650 9600 50  0001 C CNN "Cont.Current"
-F 21 "_" H 1650 9600 50  0001 C CNN "Frequency"
-F 22 "_" H 1650 9600 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" H 1558 9691 50  0001 R CNN "Description"
+F 13 "_" H 1650 9600 50  0001 C CNN "Voltage"
+F 14 "_" H 1650 9600 50  0001 C CNN "Power"
+F 15 "_" H 1650 9600 50  0001 C CNN "Tolerance"
+F 16 "_" H 1650 9600 50  0001 C CNN "Temperature"
+F 17 "_" H 1650 9600 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 1650 9600 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 1650 9600 50  0001 C CNN "Cont.Current"
+F 20 "_" H 1650 9600 50  0001 C CNN "Frequency"
+F 21 "_" H 1650 9600 50  0001 C CNN "ResonnanceFreq"
 	1    1650 9600
 	-1   0    0    1   
 $EndComp
@@ -1009,17 +1009,16 @@ F 8 "_" H 2000 9600 50  0001 C CNN "D1PN"
 F 9 "_" H 2000 9600 50  0001 C CNN "D1PL"
 F 10 "_" H 2000 9600 50  0001 C CNN "D2PN"
 F 11 "_" H 2000 9600 50  0001 C CNN "D2PL"
-F 12 "0402" H 2000 9600 50  0001 C CNN "Package"
-F 13 "_" H 1908 9691 50  0001 R CNN "Description"
-F 14 "_" H 2000 9600 50  0001 C CNN "Voltage"
-F 15 "_" H 2000 9600 50  0001 C CNN "Power"
-F 16 "_" H 2000 9600 50  0001 C CNN "Tolerance"
-F 17 "_" H 2000 9600 50  0001 C CNN "Temperature"
-F 18 "_" H 2000 9600 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 2000 9600 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 2000 9600 50  0001 C CNN "Cont.Current"
-F 21 "_" H 2000 9600 50  0001 C CNN "Frequency"
-F 22 "_" H 2000 9600 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" H 1908 9691 50  0001 R CNN "Description"
+F 13 "_" H 2000 9600 50  0001 C CNN "Voltage"
+F 14 "_" H 2000 9600 50  0001 C CNN "Power"
+F 15 "_" H 2000 9600 50  0001 C CNN "Tolerance"
+F 16 "_" H 2000 9600 50  0001 C CNN "Temperature"
+F 17 "_" H 2000 9600 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 2000 9600 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 2000 9600 50  0001 C CNN "Cont.Current"
+F 20 "_" H 2000 9600 50  0001 C CNN "Frequency"
+F 21 "_" H 2000 9600 50  0001 C CNN "ResonnanceFreq"
 	1    2000 9600
 	-1   0    0    1   
 $EndComp
@@ -1078,17 +1077,16 @@ F 8 "_" H 2900 9600 50  0001 C CNN "D1PN"
 F 9 "_" H 2900 9600 50  0001 C CNN "D1PL"
 F 10 "_" H 2900 9600 50  0001 C CNN "D2PN"
 F 11 "_" H 2900 9600 50  0001 C CNN "D2PL"
-F 12 "0402" H 2900 9600 50  0001 C CNN "Package"
-F 13 "_" H 2808 9691 50  0001 R CNN "Description"
-F 14 "_" H 2900 9600 50  0001 C CNN "Voltage"
-F 15 "_" H 2900 9600 50  0001 C CNN "Power"
-F 16 "_" H 2900 9600 50  0001 C CNN "Tolerance"
-F 17 "_" H 2900 9600 50  0001 C CNN "Temperature"
-F 18 "_" H 2900 9600 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 2900 9600 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 2900 9600 50  0001 C CNN "Cont.Current"
-F 21 "_" H 2900 9600 50  0001 C CNN "Frequency"
-F 22 "_" H 2900 9600 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" H 2808 9691 50  0001 R CNN "Description"
+F 13 "_" H 2900 9600 50  0001 C CNN "Voltage"
+F 14 "_" H 2900 9600 50  0001 C CNN "Power"
+F 15 "_" H 2900 9600 50  0001 C CNN "Tolerance"
+F 16 "_" H 2900 9600 50  0001 C CNN "Temperature"
+F 17 "_" H 2900 9600 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 2900 9600 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 2900 9600 50  0001 C CNN "Cont.Current"
+F 20 "_" H 2900 9600 50  0001 C CNN "Frequency"
+F 21 "_" H 2900 9600 50  0001 C CNN "ResonnanceFreq"
 	1    2900 9600
 	-1   0    0    1   
 $EndComp
@@ -1492,6 +1490,7 @@ F 1 "SN65HVD75" H 13350 6950 50  0000 C CNN
 F 2 "Housings_SSOP:TSSOP-8_3x3mm_Pitch0.65mm" H 14150 6250 50  0001 C CIN
 F 3 "" H 13100 6600 50  0001 C CNN
 F 4 "SN65HVD75DGKR" H 13100 6600 60  0001 C CNN "MFP"
+F 5 "296-35070-1" H 13100 6600 60  0001 C CNN "D1PN"
 	1    13100 6600
 	1    0    0    -1  
 $EndComp
@@ -1626,6 +1625,7 @@ F 0 "U8" H 1775 10587 60  0000 C CNN
 F 1 "R-78xx-0.5" H 1775 10481 60  0000 C CNN
 F 2 "DCDC:R-78xx-0.5" H 1850 10200 60  0001 C CNN
 F 3 "" H 1850 10200 60  0001 C CNN
+F 4 "945-1035" H 1750 10300 60  0001 C CNN "D1PN"
 	1    1750 10300
 	1    0    0    -1  
 $EndComp
@@ -1850,6 +1850,7 @@ F 0 "L1" V 2350 9350 50  0000 C CNN
 F 1 "ferrite" V 2350 9750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2330 9500 50  0001 C CNN
 F 3 "" H 2400 9500 50  0001 C CNN
+F 4 "587-1879-1" V 2400 9500 60  0001 C CNN "D1PN"
 	1    2400 9500
 	0    1    1    0   
 $EndComp
@@ -1873,17 +1874,16 @@ F 8 "_" H 3300 9600 50  0001 C CNN "D1PN"
 F 9 "_" H 3300 9600 50  0001 C CNN "D1PL"
 F 10 "_" H 3300 9600 50  0001 C CNN "D2PN"
 F 11 "_" H 3300 9600 50  0001 C CNN "D2PL"
-F 12 "0402" H 3300 9600 50  0001 C CNN "Package"
-F 13 "_" H 3208 9691 50  0001 R CNN "Description"
-F 14 "_" H 3300 9600 50  0001 C CNN "Voltage"
-F 15 "_" H 3300 9600 50  0001 C CNN "Power"
-F 16 "_" H 3300 9600 50  0001 C CNN "Tolerance"
-F 17 "_" H 3300 9600 50  0001 C CNN "Temperature"
-F 18 "_" H 3300 9600 50  0001 C CNN "ReverseVoltage"
-F 19 "_" H 3300 9600 50  0001 C CNN "ForwardVoltage"
-F 20 "_" H 3300 9600 50  0001 C CNN "Cont.Current"
-F 21 "_" H 3300 9600 50  0001 C CNN "Frequency"
-F 22 "_" H 3300 9600 50  0001 C CNN "ResonnanceFreq"
+F 12 "_" H 3208 9691 50  0001 R CNN "Description"
+F 13 "_" H 3300 9600 50  0001 C CNN "Voltage"
+F 14 "_" H 3300 9600 50  0001 C CNN "Power"
+F 15 "_" H 3300 9600 50  0001 C CNN "Tolerance"
+F 16 "_" H 3300 9600 50  0001 C CNN "Temperature"
+F 17 "_" H 3300 9600 50  0001 C CNN "ReverseVoltage"
+F 18 "_" H 3300 9600 50  0001 C CNN "ForwardVoltage"
+F 19 "_" H 3300 9600 50  0001 C CNN "Cont.Current"
+F 20 "_" H 3300 9600 50  0001 C CNN "Frequency"
+F 21 "_" H 3300 9600 50  0001 C CNN "ResonnanceFreq"
 	1    3300 9600
 	-1   0    0    1   
 $EndComp
@@ -2054,6 +2054,7 @@ F 0 "J4" H 1700 8923 50  0000 C CNN
 F 1 "CONN_02X05" H 1700 8924 50  0001 C CNN
 F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch1.27mm" H 1700 8924 50  0001 C CNN
 F 3 "" H 1700 7400 50  0000 C CNN
+F 4 "S9015E-05" H 1700 8600 60  0001 C CNN "D1PN"
 	1    1700 8600
 	1    0    0    -1  
 $EndComp
@@ -2092,7 +2093,7 @@ F 4 "Panasonic" H 2250 10500 50  0001 C CNN "MFN"
 F 5 "EEE-FK0J101UR" H 2250 10500 50  0001 C CNN "MFP"
 F 6 "digikey" H 2250 10500 50  0001 C CNN "D1"
 F 7 "mouser" H 2250 10500 50  0001 C CNN "D2"
-F 8 "_" H 2250 10500 50  0001 C CNN "D1PN"
+F 8 "PCE3762" H 2250 10500 50  0001 C CNN "D1PN"
 F 9 "_" H 2250 10500 50  0001 C CNN "D1PL"
 F 10 "_" H 2250 10500 50  0001 C CNN "D2PN"
 F 11 "_" H 2250 10500 50  0001 C CNN "D2PL"
