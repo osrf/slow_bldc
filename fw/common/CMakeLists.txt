@@ -1,0 +1,11 @@
+add_library(common
+  startup.c
+  stack.c
+  stubs.c
+  stm32f3_vectors.c
+  pin.c
+  led.c
+  console.c
+  motor.c
+  serial.c
+  current.c)
