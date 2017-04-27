@@ -4,6 +4,7 @@ add_library(common
   stubs.c
   stm32f3_vectors.c
   pin.c
+  console.c
   led.c
   console.c
   motor.c

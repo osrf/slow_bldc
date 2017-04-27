@@ -44,3 +44,5 @@ include_directories(common/st)
 
 add_subdirectory(common)
 add_subdirectory(blink)
+add_subdirectory(hello)
+add_subdirectory(static_pwm)
