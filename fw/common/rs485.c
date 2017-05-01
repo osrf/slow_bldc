@@ -17,8 +17,10 @@
 
 void rs485_init()
 {
-  printf("serial_init()\n");
+  printf("rs485_init()\n");
+  /*
   pin_set_output(RS485_GPIO
+  */
 }
 
 void rs485_rx(const uint8_t *data, const uint16_t len)

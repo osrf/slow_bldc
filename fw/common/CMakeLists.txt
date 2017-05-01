@@ -8,5 +8,5 @@ add_library(common
   led.c
   console.c
   motor.c
-  serial.c
+  rs485.c
   current.c)

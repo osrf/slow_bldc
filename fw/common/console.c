@@ -18,7 +18,8 @@ void console_init()
 {
   s_console_init_complete = true;
   RCC->APB2ENR |= RCC_APB2ENR_USART1EN;
-  pin_set_alternate_function(CONSOLE_GPIO, TX_PIN, 42);  // PA9 AF? = TX1
+  pin_set_alternate_function(CONSOLE_GPIO, TX_PIN, 7);  // PA9  AF7 = TX1
+  pin_set_alternate_function(CONSOLE_GPIO, RX_PIN, 7);  // PA10 AF7 = RX1
   CONSOLE_USART->CR1 &= ~USART_CR1_UE;
   CONSOLE_USART->CR1 |=  USART_CR1_TE;
   // baud rate = F_CK / USARTDIV
