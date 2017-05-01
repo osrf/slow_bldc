@@ -1,1 +1,6 @@
 fab
+bin
+*.bak
+*-bak
+*-cache.lib
+build
