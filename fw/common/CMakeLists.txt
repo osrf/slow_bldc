@@ -7,6 +7,8 @@ add_library(common
   console.c
   led.c
   console.c
-  motor.c
+  pwm.c
   rs485.c
-  current.c)
+  current.c
+  motor.c
+  enc.c)

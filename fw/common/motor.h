@@ -1,10 +1,9 @@
-#ifndef MOTORS_H
-#define MOTORS_H
+#ifndef MOTOR_H
+#define MOTOR_H
 
-#include <stdint.h>
-#include "st/stm32f303xc.h"
+#include <stdbool.h>
 
 void motor_init();
-void motor_set_pwm(int16_t a, int16_t b, int16_t c);
+void motor_assert_reset(const bool reset);
 
 #endif

@@ -2,10 +2,13 @@
 #include <stdio.h>
 #include "console.h"
 #include "current.h"
+#include "enc.h"
 #include "led.h"
 #include "motor.h"
-//#include "serial.h"
+#include "pwm.h"
+#include "rs485.h"
 #include "stack.h"
+#include "st/stm32f303xc.h"
 //#include "systime.h"
 
 void __libc_init_array(void);  // i'm sure there is declared somewhere?
@@ -58,10 +61,12 @@ void reset_vector(void)
   setvbuf(stdout, stdout_buf, _IOLBF, sizeof(stdout_buf));
   led_init();
   console_init();
+  pwm_init();
+  motor_init();
+  enc_init();
   /*
   serial_init();
   current_init();
-  motor_init();
   systime_init();
   */
   __enable_irq();
