@@ -11,4 +11,6 @@ add_library(common
   rs485.c
   current.c
   motor.c
-  enc.c)
+  enc.c
+  params.c
+  parser.c)

@@ -5,6 +5,7 @@
 #include "enc.h"
 #include "led.h"
 #include "motor.h"
+#include "params.h"
 #include "pwm.h"
 #include "rs485.h"
 #include "stack.h"
@@ -59,6 +60,7 @@ void reset_vector(void)
   // hooray we're done! we're now running at 72 MHz.
   static char stdout_buf[256];
   setvbuf(stdout, stdout_buf, _IOLBF, sizeof(stdout_buf));
+  params_init();
   led_init();
   console_init();
   pwm_init();
