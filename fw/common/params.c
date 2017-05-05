@@ -5,7 +5,7 @@ struct param
 {
   const char *n;  // name
   int t;  // type
-  void *p;  // pointer to value
+  volatile void *p;  // pointer to value
 };
 
 #define MAX_PARAMS 100
@@ -28,7 +28,7 @@ uint32_t params_count()
 }
 
 void params_add(const char *param_name,
-    const param_type_t param_type, void *param_ptr)
+    const param_type_t param_type, volatile void *param_ptr)
 {
   if (num_params >= MAX_PARAMS) {
     printf("out of param storage; can't add param [%s]\n", param_name);
@@ -54,7 +54,7 @@ param_type_t params_get_type(const uint32_t param_idx)
   return params[param_idx].t;
 }
 
-void *params_get_ptr(const uint32_t param_idx)
+volatile void *params_get_ptr(const uint32_t param_idx)
 {
   if (param_idx >= num_params)
     return NULL;

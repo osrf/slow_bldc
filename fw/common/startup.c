@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include "console.h"
+#include "control.h"
 #include "current.h"
 #include "enc.h"
 #include "led.h"

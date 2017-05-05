@@ -14,4 +14,5 @@ add_library(common
   enc.c
   params.c
   parser.c
-  control.c)
+  control.c
+  tables.c)

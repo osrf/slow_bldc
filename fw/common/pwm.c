@@ -44,8 +44,7 @@ void pwm_init()
 void pwm_set(const uint32_t a, const uint32_t b, const uint32_t c)
 {
   // bounds check to avoid bonkers stuff
-  const uint32_t MAX_PWM = 2047;
-  TIM8->CCR1 = a <= MAX_PWM ? a : MAX_PWM;
-  TIM8->CCR2 = b <= MAX_PWM ? b : MAX_PWM;
-  TIM8->CCR3 = c <= MAX_PWM ? c : MAX_PWM;
+  TIM8->CCR1 = a <= PWM_MAX ? a : PWM_MAX;
+  TIM8->CCR2 = b <= PWM_MAX ? b : PWM_MAX;
+  TIM8->CCR3 = c <= PWM_MAX ? c : PWM_MAX;
 }
