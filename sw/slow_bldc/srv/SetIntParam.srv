@@ -1,2 +1,3 @@
-IntParam param
+string name
+int32 value
 ---

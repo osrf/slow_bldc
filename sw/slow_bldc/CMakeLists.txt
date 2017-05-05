@@ -9,14 +9,11 @@ find_package(catkin REQUIRED COMPONENTS
 
 generate_dynamic_reconfigure_options(cfg/Driver.cfg)
 
-add_message_files(FILES
-  IntParam.msg
-  FloatParam.msg
-)
-
 add_service_files(FILES
   SetIntParam.srv
   SetFloatParam.srv
+  GetIntParam.srv
+  GetFloatParam.srv
 )
 
 generate_messages()
@@ -34,7 +31,7 @@ catkin_package(
 
 include_directories(${catkin_INCLUDE_DIRS})
 
-add_executable(slow_bldc slow_bldc.cpp lightweightserial.cpp)
+add_executable(slow_bldc slow_bldc.cpp lightweightserial.cpp parser.c)
 add_dependencies(slow_bldc
   slow_bldc_gencfg
   ${slow_bldc_EXPORTED_TARGETS}

@@ -5,6 +5,7 @@
 
 void rs485_init();
 void rs485_tick();
+void rs485_tx(const uint32_t len, const uint8_t *data);
 
 #endif
 

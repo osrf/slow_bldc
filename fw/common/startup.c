@@ -66,11 +66,13 @@ void reset_vector(void)
   pwm_init();
   motor_init();
   enc_init();
+  rs485_init();
   /*
   serial_init();
   current_init();
   systime_init();
   */
+  control_init();
   __enable_irq();
   main(); // jump to application main()
   while (1) { } // hopefully we never get here...

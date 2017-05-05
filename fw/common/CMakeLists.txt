@@ -13,4 +13,5 @@ add_library(common
   motor.c
   enc.c
   params.c
-  parser.c)
+  parser.c
+  control.c)
