@@ -14,7 +14,7 @@
 #define RSTA_PIN 4
 
 #define RSTB_GPIO GPIOC
-#define RSTB_PIN 2
+#define RSTB_PIN 13
 
 #define RSTC_GPIO GPIOB
 #define RSTC_PIN 7

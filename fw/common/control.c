@@ -8,10 +8,10 @@
 
 #define CONTROL_MODE_IDLE    0
 #define CONTROL_MODE_VOLTAGE 1
-static uint32_t g_control_mode = CONTROL_MODE_IDLE;
-static uint32_t g_control_encoder_offset = 0;
+static uint32_t g_control_mode = CONTROL_MODE_VOLTAGE;
+static uint32_t g_control_encoder_offset = 500;
 #define ENC_TICKS_PER_ELEC_REV (ENC_COUNTS / MOTOR_POLE_PAIRS)
-static volatile float g_voltage_target = 1.0;
+static volatile float g_voltage_target = 2.0;
 
 void control_init()
 {
@@ -47,14 +47,22 @@ void control_tick()
     v_c = g_voltage_target * g_tables_motor_modulation[th_c];
   }
 
+  const float PWM_MID = PWM_MAX / 2.0f;
   if (g_control_mode == CONTROL_MODE_IDLE) {
-    pwm_set(PWM_MAX/2, PWM_MAX/2, PWM_MAX/2);
+    pwm_set(PWM_MID, PWM_MID, PWM_MID);
   }
   else {
     const float BUS_VOLTAGE = 12.0f;
-    float pwm_a = PWM_MAX / 2.0f * v_a / BUS_VOLTAGE + PWM_MAX / 2.0f;
-    float pwm_b = PWM_MAX / 2.0f * v_b / BUS_VOLTAGE + PWM_MAX / 2.0f;
-    float pwm_c = PWM_MAX / 2.0f * v_c / BUS_VOLTAGE + PWM_MAX / 2.0f;
+    int32_t pwm_a = (int32_t)(PWM_MID * v_a / BUS_VOLTAGE + PWM_MID);
+    int32_t pwm_b = (int32_t)(PWM_MID * v_b / BUS_VOLTAGE + PWM_MID);
+    int32_t pwm_c = (int32_t)(PWM_MID * v_c / BUS_VOLTAGE + PWM_MID);
+    // clamp to sane values
+    pwm_a = pwm_a < 0 ? 0 : pwm_a;
+    pwm_b = pwm_b < 0 ? 0 : pwm_b;
+    pwm_c = pwm_c < 0 ? 0 : pwm_c;
+    pwm_a = pwm_a >= PWM_MAX ? PWM_MAX : pwm_a;
+    pwm_b = pwm_b >= PWM_MAX ? PWM_MAX : pwm_b;
+    pwm_c = pwm_c >= PWM_MAX ? PWM_MAX : pwm_c;
     pwm_set(pwm_a, pwm_b, pwm_c);
   }
 }
