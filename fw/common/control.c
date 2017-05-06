@@ -22,7 +22,6 @@ static volatile float g_position_kp = 20.0;
 static volatile float g_position_kd = 0.4;
 static volatile float g_position_kd_alpha = 0.2;
 static uint32_t g_control_prev_t = 0;
-//static uint32_t g_control_enc_prev = 0;
 
 void control_init()
 {
@@ -40,16 +39,6 @@ void control_tick()
   const uint32_t enc_ticks = enc_poll() + g_control_encoder_offset;
   const uint32_t elec_angle_ticks = enc_ticks % ENC_TICKS_PER_ELEC_REV;
 
-  /*
-  int32_t enc_diff = 0;
-  if (g_control_prev_t != 0)  // avoid wallop on first time through
-    enc_diff = enc_ticks - g_control_enc_prev;
-  if (enc_diff > ENC_COUNTS / 2)
-    enc_diff -= ENC_COUNTS;  // wrap
-  else if (enc_diff < -ENC_COUNTS / 2)
-    enc_diff += ENC_COUNTS;  // wrap
-  float enc_diff_rad_sec = enc_diff * 2.0f * PI / ENC_COUNTS / (1.0e-6 * dt);
-  */
   const uint32_t t_now = SYSTIME_USECS;
   uint32_t dt = t_now - g_control_prev_t;
   g_control_prev_t = t_now;
