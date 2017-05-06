@@ -6,12 +6,12 @@
 #include "enc.h"
 #include "led.h"
 #include "motor.h"
-#include "params.h"
+#include "param.h"
 #include "pwm.h"
 #include "rs485.h"
 #include "stack.h"
 #include "st/stm32f303xc.h"
-//#include "systime.h"
+#include "systime.h"
 
 void __libc_init_array(void);  // i'm sure there is declared somewhere?
 
@@ -61,19 +61,19 @@ void reset_vector(void)
   // hooray we're done! we're now running at 72 MHz.
   static char stdout_buf[256];
   setvbuf(stdout, stdout_buf, _IOLBF, sizeof(stdout_buf));
-  params_init();
+  param_init();
   led_init();
   console_init();
   pwm_init();
   motor_init();
   enc_init();
   rs485_init();
+  systime_init();
+  control_init();
   /*
   serial_init();
   current_init();
-  systime_init();
   */
-  control_init();
   __enable_irq();
   main(); // jump to application main()
   while (1) { } // hopefully we never get here...

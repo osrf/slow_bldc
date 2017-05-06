@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "led.h"
-#include "params.h"
+#include "param.h"
 #include "parser.h"
 #include "pin.h"
 #include "pwm.h"
@@ -96,7 +96,7 @@ void rs485_tick()
 static void rs485_rx_req_num_params()
 {
   //printf("rs485_rx_req_num_params()\n");
-  const uint32_t num_params = params_count();
+  const uint32_t num_params = param_count();
   uint8_t pkt[5] = {0};
   pkt[0] = 0x01;
   pkt[1] = num_params & 0xff;

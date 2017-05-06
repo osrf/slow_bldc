@@ -12,7 +12,8 @@ add_library(common
   current.c
   motor.c
   enc.c
-  params.c
+  param.c
   parser.c
   control.c
-  tables.c)
+  tables.c
+  systime.c)

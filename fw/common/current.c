@@ -9,5 +9,6 @@ void current_init()
 
 int current_poll(const int channel)
 {
+  // TODO
   return 0;
 }
