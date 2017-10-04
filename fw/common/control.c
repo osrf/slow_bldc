@@ -18,8 +18,8 @@ static uint32_t g_control_encoder_offset = 500;
 #define ENC_TICKS_PER_ELEC_REV (ENC_COUNTS / MOTOR_POLE_PAIRS)
 static volatile float g_voltage_target = 2.0;
 static volatile float g_position_target = 0.6;
-static volatile float g_position_kp = 20.0;
-static volatile float g_position_kd = 0.4;
+static volatile float g_position_kp = 80; //20.0;
+static volatile float g_position_kd = 0.2;//0.1; //0.4;
 static volatile float g_position_kd_alpha = 0.2;
 static uint32_t g_control_prev_t = 0;
 
